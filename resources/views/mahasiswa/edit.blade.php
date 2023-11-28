@@ -1,6 +1,9 @@
 @extends('layouts2/aplikasi')
 
 @section('konten')
+<head>
+  <link rel="stylesheet" href="{{ 'css/app.css' }}">
+</head>
 
 <a href='/mahasiswa' class="btn btn-secondary"><< Kembali</a>
 
