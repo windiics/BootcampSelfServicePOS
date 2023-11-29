@@ -34,18 +34,18 @@ class SessionController extends Controller
 
         if(Auth::attempt($infologin)){
             //kalau otentikasi sukses
-            return redirect('mahasiswa')->with('success', 'Berhasil login');
+            return redirect('mahasiswa')->with('success', ' Berhasil login');
         }else{
             //kalau otentikasi gagal
             // return 'gagal';
-            return redirect('sesi')->withErrors('Username dan password yang dimasukkan tidak valid');
+            return redirect('sesi')->withErrors(' Username dan password yang dimasukkan tidak valid');
         }
     }
 
     function logout()
     {
         Auth::logout();
-        return redirect('sesi')->with('success', 'Berhasil logout');
+        return redirect('sesi')->with('success', ' Berhasil logout');
     }
 
     function register()
@@ -86,11 +86,11 @@ class SessionController extends Controller
 
         if(Auth::attempt($infologin)){
             //kalau otentikasi sukses
-            return redirect('mahasiswa')->with('success', Auth::user()->name. 'Berhasil login');
+            return redirect('mahasiswa')->with('success', Auth::user()->name. ' Berhasil login');
         }else{
             //kalau otentikasi gagal
             // return 'gagal';
-            return redirect('sesi')->withErrors('Username dan password yang dimasukkan tidak valid');
+            return redirect('sesi')->withErrors(' Username dan password yang dimasukkan tidak valid');
         }
     }
 
