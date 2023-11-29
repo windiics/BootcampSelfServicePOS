@@ -44,7 +44,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/mahasiswa/{id}', [App\Http\Controllers\introduceController::class, 'detail'])->where('id','[0-9]+');
 
 
-// Auth::routes();
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
