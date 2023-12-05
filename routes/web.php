@@ -54,11 +54,15 @@ Route::get('/', [App\Http\Controllers\HalamanController::class, 'index']);
 Route::get('/kontak', [App\Http\Controllers\HalamanController::class, 'kontak']);
 Route::get('/tentang', [App\Http\Controllers\HalamanController::class, 'tentang']);
 
+//login,register,logout via sesi
 Route::get('/sesi', [App\Http\Controllers\SessionController::class, 'index']);
 Route::post('/sesi/login', [App\Http\Controllers\SessionController::class, 'login']);
 Route::get('/sesi/logout', [App\Http\Controllers\SessionController::class, 'logout']);
 Route::get('/sesi/register', [App\Http\Controllers\SessionController::class, 'register']);
 Route::post('/sesi/create', [App\Http\Controllers\SessionController::class, 'create']);
+
+//login,register,logout bawaan laravel
+
 
 Route::resource('mahasiswa', MahasiswaController::class);
 
@@ -69,3 +73,6 @@ Route::get('/produk', function () {
 });
 
 Route::resource('produk', ProdukController::class);
+
+//pertemuan 4
+Route::resource('/produk', 'App\Http\Controllers\ProdukController');
