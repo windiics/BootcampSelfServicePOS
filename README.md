@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About this Project
+Fitur Login
+ada di (http://127.0.0.1:8000/sesi)
+
+Login dengan menggunakan
+ email=>user@gmail.com
+ password=>user1234
+
+ Atau boleh register
+ ada di (http://127.0.0.1:8000/sesi/register)
+ 
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
