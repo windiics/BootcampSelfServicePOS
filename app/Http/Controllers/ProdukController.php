@@ -39,6 +39,7 @@ class ProdukController extends Controller
         Session::flash('harga', $request->harga);
         Session::flash('stok', $request->stok);
 
+        //validator
         $request->validate([
             'produk'=> 'required',
             'harga'=> 'required|numeric',
@@ -66,6 +67,7 @@ class ProdukController extends Controller
             'stok' => $request->input('stok'),
             'foto' => $foto_nama
         ];
+
         Produk::create($data);
         return redirect('produk')->with('success', 'Berhasil menambahkan data');
     }
@@ -98,7 +100,6 @@ class ProdukController extends Controller
             'harga'=>'required',
             'stok'=>'required'
         ],[
-            'id.numeric'=>'Nomor produk wajib diisi dalam angka',
             'produk.required'=>'Nama produk wajib diisi',
             'harga.required'=>'Harga produk wajib diisi',
             'stok.required'=>'Stok produk wajib diisi'

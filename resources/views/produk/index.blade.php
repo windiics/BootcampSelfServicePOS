@@ -2,7 +2,7 @@
 
 @section('konten')
     <a href="/produk/create" class="btn btn-primary">+Tambah Data Produk</a>
-    <table class="table">
+    <table class="table table-light">
         <thead>
             <tr>
                 <th>Foto</th>
