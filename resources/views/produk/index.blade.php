@@ -39,4 +39,9 @@
         </tbody>
     </table>
     {{ $data->links() }}
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+        <a href="/home" class="btn btn-outline-primary px-3" type="button"><< Back to home</a>
+      </div>
+
 @endsection

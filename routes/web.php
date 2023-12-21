@@ -55,16 +55,16 @@ Route::get('/kontak', [App\Http\Controllers\HalamanController::class, 'kontak'])
 Route::get('/tentang', [App\Http\Controllers\HalamanController::class, 'tentang']);
 
 //login,register,logout via sesi
-Route::get('/sesi', [App\Http\Controllers\SessionController::class, 'index']);
-Route::post('/sesi/login', [App\Http\Controllers\SessionController::class, 'login']);
+Route::get('/sesi', [App\Http\Controllers\SessionController::class, 'index'])->middleware('isTamu');
+Route::post('/sesi/login', [App\Http\Controllers\SessionController::class, 'login'])->middleware('isTamu');
 Route::get('/sesi/logout', [App\Http\Controllers\SessionController::class, 'logout']);
-Route::get('/sesi/register', [App\Http\Controllers\SessionController::class, 'register']);
-Route::post('/sesi/create', [App\Http\Controllers\SessionController::class, 'create']);
+Route::get('/sesi/register', [App\Http\Controllers\SessionController::class, 'register'])->middleware('isTamu');
+Route::post('/sesi/create', [App\Http\Controllers\SessionController::class, 'create'])->middleware('isTamu');
 
 //login,register,logout bawaan laravel
 
 
-Route::resource('mahasiswa', MahasiswaController::class);
+Route::resource('mahasiswa', MahasiswaController::class)->middleware('isLogin');
 
 
 Route::get('/produk', function () {
@@ -72,7 +72,7 @@ Route::get('/produk', function () {
     return view('produk', compact('nama_produk'));
 });
 
-Route::resource('produk', ProdukController::class);
+Route::resource('produk', ProdukController::class)->middleware('user');;
 
 //pertemuan 4
-Route::resource('/produk', 'App\Http\Controllers\ProdukController');
+Route::resource('/produk', 'App\Http\Controllers\ProdukController')->middleware('user');
