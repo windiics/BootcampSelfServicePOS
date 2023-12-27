@@ -25,7 +25,7 @@ class HalamanController extends Controller
     {
         $judul = 'Halaman Kontak';
         $data = [
-            'judul' => 'pHalaman Kontak',
+            'judul' => 'Halaman Kontak',
             'kontak' => [
                 'email' => 'windics@gmail.com',
                 'instagram' => 'windics22_'
