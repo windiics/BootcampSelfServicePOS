@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// 127.0.0.1:8000/ ==> view welcome
-// Route::get('/', function () {
-//     return view('welcome');
+//127.0.0.1:8000/ ==> view welcome
+//Route::get('/', function () {
+//     return view('layouts.master');
 // });
 
 // // 127.0.0.1:8000/mahasiswa ==> <h1>Hi! Saya Mahasiswa</h1>
