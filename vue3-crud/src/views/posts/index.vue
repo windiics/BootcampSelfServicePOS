@@ -49,15 +49,15 @@
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-12">
-                <router-link :to="{ name: 'posts.create' }" class="btn btn-md btn-success rounded shadow border-0 mb-3">ADD NEW POST</router-link>
+                <router-link :to="{ name: 'posts.create' }" class="btn btn-md btn-success rounded shadow border-0 mb-3">+ ADD NEW PRODUCT</router-link>
                 <div class="card border-0 rounded shadow">
                     <div class="card-body">
                         <table class="table table-bordered">
                             <thead class="bg-primary text-white text-center">
                                 <tr>
                                     <th scope="col">Image</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Content</th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">Details</th>
                                     <th scope="col" style="width:15%">Actions</th>
                                 </tr>
                             </thead>

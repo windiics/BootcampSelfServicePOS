@@ -2,7 +2,7 @@
 
 @section('konten')
     <div class="w-50 center border rounded px-3 py-3 mx-auto"></div>    
-    <h1>Register</h1>
+    <h1>Register&#128064</h1>
     <form action="/sesi/create" method="POST">
         @csrf
         <div class="mb-3">

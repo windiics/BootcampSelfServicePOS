@@ -79,15 +79,15 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label fw-bold">Title</label>
-                                <input type="text" class="form-control" v-model="title" placeholder="Title Post">
+                                <label class="form-label fw-bold">Product Name</label>
+                                <input type="text" class="form-control" v-model="title" placeholder="nama product">
                                 <div v-if="errors.title" class="alert alert-danger mt-2">
                                     <span>{{ errors.title[0] }}</span>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label fw-bold">Content</label>
-                                <textarea class="form-control" v-model="content" rows="5" placeholder="Content Post"></textarea>
+                                <label class="form-label fw-bold">Detail</label>
+                                <textarea class="form-control" v-model="content" rows="5" placeholder="keterangan produk"></textarea>
                                 <div v-if="errors.content" class="alert alert-danger mt-2">
                                     <span>{{ errors.content[0] }}</span>
                                 </div>

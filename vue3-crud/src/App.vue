@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link :to="{ name: 'posts.index' }" class="nav-link active" aria-current="page">POSTS</router-link
+              <router-link :to="{ name: 'posts.index' }" class="nav-link active" aria-current="page">PRODUCTS</router-link
               >
             </li>
           </ul>
@@ -26,7 +26,7 @@
               href="https://www.instagram.com/windiics_/"
               target="_blank"
               class="btn btn-secondary"
-              >Windi Centia Septiani</a
+              >Windi Centia Septiani&#x1F394</a
             >
           </ul>
         </div>
